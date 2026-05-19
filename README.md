@@ -84,3 +84,5 @@ The backend has been configured to deploy seamlessly as a **Vercel Serverless Fu
    vercel --prod
    ```
    *Make sure to configure your `MONGODB_URI`, `JWT_SECRET`, and `AI_SERVICE_URL` in the Vercel dashboard variables.*
+=======
+# Tanit-Talent-AI

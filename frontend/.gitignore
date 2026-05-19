@@ -1,14 +1,32 @@
-node_modules/
-.env
-.env.local
-.vercel/
-uploads/
 # Logs
 logs
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+<<<<<<< HEAD
+<<<<<<< HEAD
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+=======
+=======
+>>>>>>> e782e268e7a61fedbd2179d3e95de6744449999c
 lerna-debug.log*
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
@@ -142,3 +160,7 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+<<<<<<< HEAD
+>>>>>>> 6cb562b5aee3cabb0134f59eff9d26bace733546
+=======
+>>>>>>> e782e268e7a61fedbd2179d3e95de6744449999c

@@ -30,6 +30,16 @@ app.get('/', (req, res) => {
   res.json({ message: 'Welcome to Tanit-Talent-AI API' });
 });
 
+app.get('/api/debug-env', (req, res) => {
+  const uri = process.env.MONGODB_URI || '';
+  const maskedUri = uri.replace(/:([^@]+)@/, ':***@');
+  res.json({
+    hasMongoUri: !!process.env.MONGODB_URI,
+    maskedUri: maskedUri,
+    nodeEnv: process.env.NODE_ENV,
+  });
+});
+
 // Routes
 app.use('/api/auth', require('./routes/auth.routes'));
 app.use('/api/jobs', require('./routes/job.routes'));
